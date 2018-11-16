@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>Community list</title>
+</head>
+<body>
+  <!-- <h1>community loist</h1> -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-inverse">
+      <a class="navbar-brand" href="#"><span class=gold>E</span>Z CONDO TOOLS</a>
+      <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" [collapse]="isCollapsed" id="navbarNav">
+        <ul class="navbar-nav" >
+          <li class="nav-item">
+            <a><button class="btn btn-md"><i class="fas fa-home"></i>Home</button></a>&nbsp;
+          </li>
+          <li class="nav-item">
+            <a><button class="btn btn-md" (click)="goBack()"><i class="fas fa-sign-out-alt"></i>Sign Out</button></a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="content row">
+    <h6>YOUR COMMUNITY LIST</h6>
+    <button class="btn btn-success">GO TO MANAGEMENT DASHBOARD</button>
+  </div>
+  <hr>
+  <div class="content1 row">
+      <button class="btn btn-success">ADD NEW ACCOUNT TO COMMUNITY</button>
+  </div>
+  
+   <table>
+     <tr class="headings">
+       <td></td>
+       <td>COMMUNITY</td>
+       <td>STREET NAME</td>
+       <td>EXPIRY DATE</td>
+       <td>CITY</td>
+       <td>STATE/PROVINCE</td>
+       <td>UNITS</td>
+       <td></td>
+     </tr>
+     <tr *ngFor="let l of list | paginate: { itemsPerPage: 10, currentPage: p }" class="contents">
+       <td><button class="btn btn-lg" popover="Open content" triggers="mouseenter:mouseleave"><span class="open"><i class="fas fa-folder-open">OPEN</i></span></button></td>
+       <td>{{l.StrataName}}</td>
+       <td>{{l.StreetAddress}}</td>
+       <td>{{l.SubscriptionEndDate | date:"mediumDate"}}</td>
+       <td>{{l.City}}</td>
+       <td>{{l.Province}}</td>
+       <td>{{l.NumberOfUnits}}</td>
+       <td><button class="btn btn-lg new" popover="Renew content" triggers="mouseenter:mouseleave"><span class="renew"><i class="fas fa-sync-alt">RENEW</i></span></button></td>
+     </tr>
+   </table>
+
+   <pagination-controls (pageChange)="p = $event" class="pagination"></pagination-controls>
+  
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> -->
+</body>
+</html>

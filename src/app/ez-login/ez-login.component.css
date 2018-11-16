@@ -1,0 +1,154 @@
+
+.bg{
+    background: url("src\assets\images\bg.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover  !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 150px !important;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh !important;
+    scroll-behavior: auto;
+   border-radius: 0px !important;
+
+}
+/* .bg h3{
+    margin-top: 30px !important;
+} */
+div{
+    
+    background: #323232;
+    color: white;
+    height: auto;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    resize: none;
+}
+.gold{
+    color: gold;
+}
+.first p{
+     /* padding: 40px; */
+     padding-top: 20px;
+     padding-bottom: 20px;
+     text-align: center;
+     font-family: 'Roboto Slab', serif;
+     font-size: 20px;
+ }
+ .first{
+     /* margin-top: 10px; */
+     margin-bottom: 10px;
+     /* padding-bottom: 0px; */
+ }
+ i{
+    width: 40px;
+    height: 50px;
+    float: left;
+    margin: 2px 8px;
+    /* border-radius: 50%;
+    background-color: #D8A118; */
+ }
+ .form1{
+     background-color: #F2F5F7 !important;
+     border-radius: 0px;
+     /* padding-top: 0px !important; */
+     height: max-content;
+     margin-left: auto;
+     padding-bottom: 0px !important;
+ }
+ .form1 h3{
+     color:#656E77 !important;
+     padding-left: 50px;
+ }
+ .form1 h6{
+    color:#656E77 !important;
+    /* float: left; */
+   padding-left: 50px;
+    padding-top: 10px !important;
+ }
+ 
+ .form1 label{
+     color: #232324 !important;
+     float: left;
+     padding-left: 50px;
+ }
+ .input ::placeholder{
+     /* margin-top: auto; */
+     margin-right: auto;
+     align-content: flex-start;
+ }
+ .form1 input{
+     width: 300px;
+     opacity: 0.5;
+     margin-left: 50px;
+ }
+ .foo{
+     padding-left: 50px;
+     padding-top: 10px;
+     padding-bottom: 10px !important;
+     background-color: #FFFFFF !important;
+     border-top-left-radius: 0px !important;
+     border-top-right-radius: 0px !important;
+     border-bottom-left-radius: 25px !important;
+     border-bottom-right-radius: 25px !important;
+     border-bottom-color: transparent !important;
+     border-block-end-color: black !important;
+     margin-top: 0px !important;
+ }
+ .foo h5{
+     color: #3D2B15;
+     padding-top: 10px !important;
+ }
+ .row button{
+     margin-left: 50px;
+     /* padding-right: 30px; */
+ }
+footer{
+    padding-top: 10px !important;
+    text-align: center;
+}
+#my_form{
+    color: black;
+}
+body{
+    scroll-behavior: auto;
+}
+
+.modal-header{
+    background: #656E77 !important;
+    border-radius: 2px;
+}
+#template{
+    background: #656E77 !important;
+}
+/* .modal-content{
+    background-color: transparent !important;
+} */
+.toast-top-center {
+    top: 12px;
+    margin: 0 auto;
+    left: 50%;
+    }
+
+.help-block{
+    color: red;
+    background-color:transparent !important;
+    border-radius: 0px !important;
+    margin-left: 50px !important;
+}
+
+/* @media only screen and (min-width: 100px) and (max-width: 720px){
+    .div{
+       margin-left: 20px;
+       margin-right: 40px;
+    }
+} */

@@ -1,0 +1,131 @@
+
+.gold{
+    color: black
+}
+.navbar a{
+    color: white;
+    font-weight: bold;
+    position: relative;
+    left: 200px;
+}
+.navbar{
+    background: #FBB814 !important;
+    
+}
+
+.nav-item{
+    position: relative;
+    left: 800px;
+    
+}
+.nav-item button{
+    background: #FBB814 !important;
+    color: white;
+}
+i{
+    padding-right: 2px;
+}
+.content{
+   position: relative;
+   left: 200px;
+   margin-top: 10px;
+}
+.row button{
+    height: 30px;
+    width: 200px;
+    position: relative;
+    left:800px;
+    font-size: 10px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+
+hr{
+    color: black !important;
+    width: 1000px;
+    height: 30px;
+    position: relative;
+    left:200px;
+    border-radius: 10px;
+}
+.content1 button{
+    position: relative;
+    left: 1167px;
+}
+.container{
+    margin-top: 20px;
+    /* border: 2px solid black; */
+}
+li{
+    list-style: none;
+}
+table{
+    margin-left:100px;
+    margin-top: 50px;
+    position: static;
+    background-color: white;
+    width:auto;
+    table-layout:inherit;
+    /* border: 2px solid gray; */
+}
+td{
+  padding-right: 50px !important;
+}
+
+.pagination{
+    float: none;
+    position: relative;
+    padding-top: 50px !important;
+    left: 500px;
+    right: 500px;
+}
+
+td button{
+    width: 80px;
+    height: 30px;
+    background-color: #FBB814;
+    margin-left: 10px;
+    margin-right: auto;
+}
+
+.new{
+    background-color: green !important;
+}
+.open{
+    font-size:  10px;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    line-height:1.2em;
+    text-align: center;
+    padding-left: 5px;
+    font-weight: 400;
+}
+.headings{
+    width: 30px;
+    height: 30px;
+    /* border:  solid gray; */
+    background-color: #E3E7E8;
+    font-weight: bolder;
+    color: black;
+   
+}
+
+.renew{
+       
+        font-size:  10px;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+        line-height:1.2em;
+        text-align: center;
+        padding-left: 5px;
+        font-weight: 400;
+}
+
+.contents{
+    border: 1px solid #ddd;
+    padding: 8px;
+    height: 40px;
+}
+
